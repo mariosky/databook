@@ -19,7 +19,7 @@ El libro va dirigido principalmente a estudiantes de ingeniería, posgrado y des
 6. [Agrupación]()
 7. [Sistemas de Recomendación]()
 
-### Python
+### Python para análisis de datos
 1. [Python para programadores]()
 2. [SciPy]() 
 3. [Pandas]()
