@@ -23,11 +23,12 @@ Antes de hablar de Minería de datos veamos el proceso del KDD, según el esquem
 7. En este paso se realiza la minaría de datos a partir de el o los algoritmos seleccionados en el paso anterior.
 
 Este paso nos arroja los *patrones ocultos* que describen a los datos. Siguiendo nuestro ejemplo, el resultado podría ser un conjunto de reglas nos que pueden servir para decidir si un cliente cancelará su subscripción. Una de las regla podría ser:
-´´´
-    *SI* el cliente tiene un promedio mayor a 7 días de retraso *AND* su promedio de llamadas al mes es menor que 10
-    *ENTONCES*:
-     el cliente cancelara el servicio
-´´´
+```
+    **SI** el cliente tiene un promedio mayor a 7 días de retraso 
+         **AND** su promedio de llamadas al mes es menor que 10
+    **ENTONCES**:
+         el cliente cancelara el servicio
+```
 Los patrones son entonces son entonces Modelos que se ajustan a los datos. Los modelos no siempre están expresados en un lenguaje que los humanos podamos entender. Por ejemplo el resultado de un algoritmo de agrupamiento podrían ser simplemente grupos de clientes, que después deberíamos de interpretar.
 
 En el texto utilizaremos el término modelo en lugar de patrones, ya que es más usual actualmente. Algo muy importante es que los modelos deben de representar también a datos nuevos. Digamos nuevos clientes que se subscriban el mes siguiente.       
