@@ -10,7 +10,7 @@ El libro va dirigido principalmente a estudiantes de ingeniería, posgrado y des
 
 ### Minería de Datos
 
-1. [Introducción a la Minería de Datos]()
+1. [Introducción a la Minería de Datos](txt/intro.md)
 2. [Los Datos]()
 3. [Análisis de Datos]()
 4. [Clasificación]()
