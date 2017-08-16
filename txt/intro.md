@@ -1,12 +1,12 @@
 ## Introducción
 
-## Knowledge Discovery in Databases
+### Knowledge Discovery in Databases
 
-## Minería de Datos 
+### Minería de Datos 
 
-## Aprendizaje Automático
+### Aprendizaje Automático
 
-## Ciencia de Datos
+### Ciencia de Datos
 
 ## Aplicaciones 
 
