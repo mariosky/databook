@@ -16,10 +16,28 @@ Antes de hablar de Minería de datos veamos el proceso del KDD, según el esquem
 
 4. Dependiendo de los objetivos se deben transformar los datos para simplificar su procesamiento. Por ejemplo un documento de texto es necesario transformarlo en vector representativo. Una imagen puede ser transformada en una representación simplificada pero conservando sus características esenciales. Muchas veces también es necesario eliminar campos que no aportan mucho a la tarea de KDD. Siguiendo nuestro ejemplo, después de un análisis podríamos darnos cuenta que el número de teléfono en sí no es un dato importante para distinguir el comportamiento de los clientes, y que al contrario la marca y modelo de sus móviles son muy importantes.
 
-5. 
+5. Este paso consiste en seleccionar la tarea de minería de datos adecuado de acuerdo con la meta establecida para el proceso de KDD. Por ejemplo, clasificación, regresión, agrupamiento, etc.
 
+6. Se hace un análisis exploratorio, podemos experimentar con diferentes  algoritmos de minería de datos o de aprendizaje automático. Al seleccionar los algoritmos debemos considerar los tipos de datos que tenemos. Por ejemplo algunos algoritmos no son apropiados para datos categóricos (modelo de celular). También debemos ajustar los parámetros para mejorar el desempeño y comparar el rendimiento entre los algoritmos.
+
+7. En este paso se realiza la minaría de datos a partir de el o los algoritmos seleccionados en el paso anterior.
+
+Este paso nos arroja los *patrones ocultos* que describen a los datos. Siguiendo nuestro ejemplo, el resultado podría ser un conjunto de reglas nos que pueden servir para decidir si un cliente cancelará su subscripción. Una de las regla podría ser:
+´´´
+    *SI* el cliente tiene un promedio mayor a 7 días de retraso *AND* su promedio de llamadas al mes es menor que 10
+    *ENTONCES*:
+     el cliente cancelara el servicio
+´´´
+Los patrones son entonces son entonces Modelos que se ajustan a los datos. Los modelos no siempre están expresados en un lenguaje que los humanos podamos entender. Por ejemplo el resultado de un algoritmo de agrupamiento podrían ser simplemente grupos de clientes, que después deberíamos de interpretar.
+
+En el texto utilizaremos el término modelo en lugar de patrones, ya que es más usual actualmente. Algo muy importante es que los modelos deben de representar también a datos nuevos. Digamos nuevos clientes que se subscriban el mes siguiente.       
+
+8. En este paso nos toca interpretar los patrones que encontramos en el paso anterior. Visualizar los patones y modelos extraídos. Decidir si se ha encontrado algún conocimiento útil.
+
+9. El último paso es hacer algo con el conocimiento adquirido. Se puede utilizar directamente para tomar decisiones, incorporarlo como parte de un sistema o simplemente reportar los resultados a los interesados.
 
 ### Minería de datos
+Como hemos visto la Minería de Datos es un paso importante en el proceso de KDD, ya que a su vez es el proceso iterativo de búsqueda de patrones aplicando distintos algoritmos.
 
 ### Aprendizaje automático
 
