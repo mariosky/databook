@@ -1,27 +1,27 @@
-# Introducción
+## Introducción
 
-# Knowledge Discovery in Databases
+## Knowledge Discovery in Databases
 
-# Minería de Datos 
+## Minería de Datos 
 
-# Aprendizaje Automático
+## Aprendizaje Automático
 
-# Ciencia de Datos
+## Ciencia de Datos
 
-# Aplicaciones 
+## Aplicaciones 
 
-# Técnicas de la Minería de Datos
-## Clasificación
-## Agrupamiento
-## Reglas de Asociación
-## Detección de Anomalías 
+## Técnicas de la Minería de Datos
+### Clasificación
+### Agrupamiento
+### Reglas de Asociación
+### Detección de Anomalías 
 
-# Los Retos
+## Los Retos
 
 
-# Un problema de Clasificación
+## Un problema de Clasificación
 
-## ¿Iris, Setosa o Versicolor?
+### ¿Iris, Setosa o Versicolor?
 
-## Python al Rescate
+### Python al Rescate
 
