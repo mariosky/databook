@@ -10,7 +10,7 @@ El libro va dirigido principalmente a estudiantes de ingeniería, posgrado y des
 
 ### Minería de Datos
 
-1. [Introducción a la Minería de Datos](txt/intro.md)
+1. [Introducción](txt/intro.md)
 2. [Los Datos]()
 3. [Análisis de Datos]()
 4. [Clasificación]()
@@ -21,7 +21,7 @@ El libro va dirigido principalmente a estudiantes de ingeniería, posgrado y des
 
 ### Python para análisis de datos
 1. [Python para programadores]()
-2. [SciPy]() 
+2. [SciPy]()
 3. [Pandas]()
 4. [SciKit]()
 5. [TensorFlow]()
@@ -32,4 +32,3 @@ El contenido del libro tiene una licencia
 [`cc-by-sa`](https://creativecommons.org/licenses/by-sa/3.0/es/) y el código incluido la licencia [MIT](LICENSE).  
 
 ![cc-by-sa](https://i.creativecommons.org/l/by-sa/3.0/es/88x31.png)
-
