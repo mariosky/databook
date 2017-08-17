@@ -200,7 +200,27 @@ Ahora graficaremos al mismo tiempo las flores Setosa y Versicolor:
 >>> plt.show()
 ```
 Descubrimos algo, es posible separar linealmente o clasificar ambas flores utilizando estas dos características:
-![Setosa vs Virginica](../img/plot2.png)
+![Setosa y Virginica](../img/plot2.png)
+
+```python
+>>> plt.plot( iris[51:100,0], iris[51:100,1], 'b.')
+[<matplotlib.lines.Line2D object at 0x114cae950>]
+>>> plt.plot( iris[101:,0], iris[101:,1], 'g.')
+[<matplotlib.lines.Line2D object at 0x114cbc110>]
+>>> plt.show()
+```
+Veremos si corremos con suerte al agregar la Versicolor:
+
+```python
+[<matplotlib.lines.Line2D object at 0x114cae850>]
+>>> plt.plot( iris[51:100,0], iris[51:100,1], 'b.')
+[<matplotlib.lines.Line2D object at 0x114cae950>]
+>>> plt.plot( iris[101:,0], iris[101:,1], 'g.')
+[<matplotlib.lines.Line2D object at 0x114cbc110>]
+>>> plt.show()
+```
+
+![Setosa, Virginica, Versicolor](../img/plot3.png)
 
 
 
