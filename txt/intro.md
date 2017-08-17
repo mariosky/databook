@@ -209,7 +209,7 @@ Descubrimos algo, es posible separar linealmente o clasificar ambas flores utili
 [<matplotlib.lines.Line2D object at 0x114cbc110>]
 >>> plt.show()
 ```
-Veremos si corremos con suerte al agregar la Versicolor:
+Veremos si corremos con igual suerte al agregar la Versicolor:
 
 ```python
 [<matplotlib.lines.Line2D object at 0x114cae850>]
@@ -221,6 +221,34 @@ Veremos si corremos con suerte al agregar la Versicolor:
 ```
 
 ![Setosa, Virginica, Versicolor](../img/plot3.png)
+
+Por lo menos al considerar estas dos características vemos que es difícil distinguir entre las flores Virginica y Versicorlor.
+
+## Paso 8:  Minería de Datos
+
+Este paso lo vamos a hacer manualmente por lo pronto. ¿Como podríamos especificar el modelo?. Una manera muy sencilla sería la siguiente:
+
+![Setosa, Virginica, Versicolor](../img/plot4.png)
+
+Una recta separa a las flores Setosa del resto.
+
+Otra opción sería especificando dos reglas:
+```
+R1:
+    SI sepal_length < 5.9 AND sepal_width > 2.9
+    ENTONCES:
+         Setosa
+
+R2:
+    SI sepal_length < 4.7 AND sepal_width <= 2.9
+    ENTONCES:
+         Setosa
+```
+Gráficamente sería algo como:
+![Setosa, Virginica, Versicolor](../img/plot5.png)
+
+
+
 
 
 
