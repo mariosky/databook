@@ -38,6 +38,41 @@ En el texto utilizaremos el término modelo en lugar de patrones, ya que es más
 
 9. El último paso es hacer algo con el conocimiento adquirido. Se puede utilizar directamente para tomar decisiones, incorporarlo como parte de un sistema o simplemente reportar los resultados a los interesados.
 
+### ¿Iris, Setosa o Versicolor?
+
+Como primer ejercicio vamos a seguir el proceso de KDD para extraer conocimiento a partir del famoso [conjunto de datos de flores Iris](). El conjunto de datos incluso cuenta con su propia entrada en [wikipedia](https://es.wikipedia.org/wiki/Iris_flor_conjunto_de_datos). El conjunto de datos fue introducido por Ronald Fisher en un para un articulo en 1936. Contiene 50 muestras de tres especies de la flor Iris (Iris setosa, Iris virginica e Iris versicolor). Fisher midió cuatro características de cada muestra: el largo y ancho del sépalo y el largo y ancho del pétalo, en centímetros. Basado en la combinación de estos cuatro rasgos, Fisher se desarrolló un modelo discriminante lineal para distinguir entre una especie y otra. Como ejemplo veamos un fragmento que incluye varios registros de cada flor:
+
+#### iris.csv
+
+```
+sepal_length,sepal_width,petal_length,petal_width,species
+5.1,3.5,1.4,0.2,setosa
+4.9,3.0,1.4,0.2,setosa
+4.7,3.2,1.3,0.2,setosa
+4.6,3.1,1.5,0.2,setosa
+7.0,3.2,4.7,1.4,versicolor
+6.4,3.2,4.5,1.5,versicolor
+6.9,3.1,4.9,1.5,versicolor
+5.5,2.3,4.0,1.3,versicolor
+6.5,2.8,4.6,1.5,versicolor
+6.3,3.3,6.0,2.5,virginica
+5.8,2.7,5.1,1.9,virginica
+7.1,3.0,5.9,2.1,virginica
+6.3,2.9,5.6,1.8,virginica
+6.5,3.0,5.8,2.2,virginica
+```
+Para compartir los conjuntos de datos normalmente se utilizan archivos en formato texto. En este caso el *dataset* se encuentra en formato CSV ( comma-separated values) con el cual es muy fácil representar datos tabulares. Los archivos CSV se pueden abrir e importar sin ningún problema a hojas de calculo y sistemas de bases de datos. Como podemos ver en el ejemplo los registros están separados por saltos de línea, y en la primera se indica el nombre de la columna. En este caso cada registro cuenta con cinco campos. Los primeros cuatro son las lecturas correspondientes en centímetros y el último es muy importante ya que es la etiqueta o clase. En este caso en particular la etiqueta indica el tipo de flor.
+
+## Paso 1: identificar el objetivo
+
+El objetivo del proceso de KDD será encontrar algunos patrones que nos permitan clasificar las flores, o algún otro conocimiento nuevo.
+
+## Paso 2: seleccionar y recolectar
+
+En este caso lo que debemos hacer es simplemente bajarnos el archivo *iris.csv* de alguna parte. Esto lo podemos hacer manualmente o directamente con Python.
+
+  
+
 ### Minería de datos
 Como hemos visto la Minería de Datos es un paso importante en el proceso de KDD, ya que a su vez es el proceso iterativo de búsqueda de patrones aplicando distintos algoritmos.
 
@@ -59,9 +94,7 @@ Como hemos visto la Minería de Datos es un paso importante en el proceso de KDD
 
 
 
-## Un problema de clasificación
 
-### ¿Iris, Setosa o Versicolor?
 
 ### Python al rescate
 
