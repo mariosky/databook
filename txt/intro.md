@@ -25,9 +25,9 @@ Veamos el proceso del KDD, según el esquema de Brachman y Anand:
 
 Este paso nos arroja los *patrones ocultos* que describen a los datos. Siguiendo nuestro ejemplo, el resultado podría ser un conjunto de reglas nos que pueden servir para decidir si un cliente cancelará su subscripción. Una de las regla podría ser:
 ```
-    **SI** el cliente tiene un promedio mayor a 7 días de retraso
-         **AND** su promedio de llamadas al mes es menor que 10
-    **ENTONCES**:
+    SI el cliente tiene un promedio mayor a 7 días de retraso
+      AND su promedio de llamadas al mes es menor que 10
+    ENTONCES:
          el cliente cancelara el servicio
 ```
 Los patrones son entonces son entonces Modelos que se ajustan a los datos. Los modelos no siempre están expresados en un lenguaje que los humanos podamos entender. Por ejemplo el resultado de un algoritmo de agrupamiento podrían ser simplemente grupos de clientes, que después deberíamos de interpretar.
