@@ -244,7 +244,9 @@ R2:
     ENTONCES:
          Setosa
 ```
+
 Gráficamente sería algo como:
+
 ![Setosa, Virginica, Versicolor](../img/plot5.png)
 
 
