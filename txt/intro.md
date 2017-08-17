@@ -249,6 +249,8 @@ Gráficamente sería algo como:
 
 ![Setosa, Virginica, Versicolor](../img/plot5.png)
 
+Ya que estamos en esto descubrimos otra regla:
+![Setosa, Virginica, Versicolor](../img/plot6.png)
 
 
 
