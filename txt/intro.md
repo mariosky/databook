@@ -164,6 +164,44 @@ array([[ 5.1,  3.5,  1.4,  0.2],
        [ 4.4,  2.9,  1.4,  0.2],
        [ 4.9,  3.1,  1.5,  0.1]])
 ```
+## Paso 4: Transformar los datos.
+En este caso sencillo no será necesario transformar los datos.
+
+## Paso 5: Transformar los datos.
+En este caso sencillo no será necesario transformar los datos.
+
+## Paso 6:  Seleccionar la tarea de minería de datos
+La tarea que vamos a realizar será *Clasificación*.
+
+## Paso 7:  Análisis exploratorio
+La minería de datos en este primer ejercicio la vamos a realizar manualmente, para esto vamos a explorar los datos visualmente. Para ello utilizaremos la popular biblioteca [matplotlib](https://matplotlib.org/). Primero vamos a seleccionar las dos primeras características: ancho y largo del sépalo para ver si hay algún patrón útil. Importamos matplotlib y hacemos el plot de la primera flor. Los primeros cincuenta datos son de Iris Setosa:   
+
+```python
+>>> import matplotlib.pyplot as plt
+>>> x = iris[:50,0]
+>>> y = iris[:50,1]
+>>> plt.plot(x, y, 'r.')
+>>> plt.show()
+```
+
+Al ejecutar la instrucción plt.show() se debería mostrar lo siguiente:
+![Setosa](../img/plot1.png)
+
+
+En el eje **x** tenemos el ancho del sépalo Y en el eje **y** el largo, ambos en cm. El parámetro 'r.' indica que las flores Setosa se representarán por puntos rojos ('r.' red dots).
+
+Ahora graficaremos al mismo tiempo las flores Setosa y Versicolor:
+
+```python
+>>> plt.plot( iris[:50,0], iris[:50,1], 'r.') # Setosa
+[<matplotlib.lines.Line2D object at 0x1066ed610>]
+>>> plt.plot( iris[51:100,0], iris[51:100,1], 'b.')
+[<matplotlib.lines.Line2D object at 0x113731710>] # Virginica
+>>> plt.show()
+```
+Descubrimos algo, es posible separar linealmente o clasificar ambas flores utilizando estas dos características:
+![Setosa vs Virginica](../img/plot2.png)
+
 
 
 
