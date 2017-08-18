@@ -167,13 +167,10 @@ array([[ 5.1,  3.5,  1.4,  0.2],
 ## Paso 4: Transformar los datos.
 En este caso sencillo no será necesario transformar los datos.
 
-## Paso 5: Transformar los datos.
-En este caso sencillo no será necesario transformar los datos.
-
-## Paso 6:  Seleccionar la tarea de minería de datos
+## Paso 5:  Seleccionar la tarea de minería de datos
 La tarea que vamos a realizar será *Clasificación*.
 
-## Paso 7:  Análisis exploratorio
+## Paso 6:  Análisis exploratorio
 La minería de datos en este primer ejercicio la vamos a realizar manualmente, para esto vamos a explorar los datos visualmente. Para ello utilizaremos la popular biblioteca [matplotlib](https://matplotlib.org/). Primero vamos a seleccionar las dos primeras características: ancho y largo del sépalo para ver si hay algún patrón útil. Importamos matplotlib y hacemos el plot de la primera flor. Los primeros cincuenta datos son de Iris Setosa:   
 
 ```python
@@ -224,15 +221,15 @@ Veremos si corremos con igual suerte al agregar la Versicolor:
 
 Por lo menos al considerar estas dos características vemos que es difícil distinguir entre las flores Virginica y Versicorlor.
 
-## Paso 8:  Minería de Datos
+## Paso 7:  Minería de Datos
 
 Este paso lo vamos a hacer manualmente por lo pronto. ¿Como podríamos especificar el modelo?. Una manera muy sencilla sería la siguiente:
 
 ![Setosa, Virginica, Versicolor](../img/plot4.png)
 
-Una recta separa a las flores Setosa del resto.
+Utilizando una recta para separar a las flores Setosa del resto. Podríamos además utilizar varias rectas o incluso funciones no lineales. Estas ideas las podremos llevar acabo "manualmente" ya que solo estamos considerando dos características. Esto se puede tornar más difícil al considerar las otras dos medidas pues estaríamos trabajando en dimensión cuatro. 
 
-Otra opción sería especificando dos reglas:
+Otra modelo podría ser expresado en forma de reglas:
 ```
 R1:
     SI sepal_length < 5.9 AND sepal_width > 2.9
@@ -249,22 +246,24 @@ Gráficamente sería algo como:
 
 ![Setosa, Virginica, Versicolor](../img/plot5.png)
 
-Ya que estamos en esto descubrimos otra regla:
+Ya que estamos en esto podemos proponer un nuevo modelo simplemente agregando otra regla:
 ![Setosa, Virginica, Versicolor](../img/plot6.png)
 
+Podríamos segur buscando, por ejemplo cambiando un poco los antecedentes de las reglas, por ejemplo de sepal_length < 5.9 a sepal_length < 6.0. Nos empezamos a dar cuenta que no es fácil hacer esto manualmente. Mejor hagamos programas que hagan este trabajo de generar modelos automáticamente. Es decir, algoritmos de aprendizaje automático. 
 
+## Paso 8. Interpretar y evaluar* 
 
+Esto lo haremos más adelante, pero vale la pena pensar un poco al respecto. ¿Cual es mejor modelo?, ¿El mejor es suficientemente bueno?, ¿Existe un modelo óptimo?. ¿Que pasará cuando agreguemos nuevas flores al conjunto de datos?. 
+También debemos pensar si pudimos extraer algún conocimiento nuevo. ¿Es útil?.
 
+## Paso 9. Aplicar el conocimiento adquirido
 
+De este pequeño ejercicio podríamos reportar que las flores Setosa son fáciles de identificar.  
 
-
-
-
-
-
+Este ejercicio es básico y además no hicimos todas las consideraciones. Más adelante veremos otros detalles que no hemos considerado y por supuesto ya no haremos la minería de datos manualmente. El ejercicio también ha servido para darnos idea de como trabajaremos con Python y sus bibliotecas para este tipo de tareas. Seguro te diste cuenta que no hemos utilizado ciclos, enviamos funciones como parámetros y trabajamos de forma interactiva para llegar a la solución.
 
 ### Minería de datos
-Como hemos visto la Minería de Datos es un paso importante en el proceso de KDD, ya que a su vez es el proceso iterativo de búsqueda de patrones aplicando distintos algoritmos.
+El libro se centrará principalmente en el componente de Minería de Datos, que como vimos es un paso importante en el proceso de KDD. Pero también te haz dado cuenta que es muy importante hacer bien los pasos anteriores. De hecho en la mayoría de los proyectos los otros pasos requieren de mayor trabajo. La minería de datos entonces podemos definirla como: El proceso de búsqueda de patrones aplicando distintos algoritmos a grandes cantidades de datos.
 
 ### Aprendizaje automático
 
@@ -280,13 +279,6 @@ Como hemos visto la Minería de Datos es un paso importante en el proceso de KDD
 
 ## Los Retos
 
-
-
-
-
-
-
-### Python al rescate
 
 
 [Lectura adicional](http://www.kdnuggets.com/gpspubs/aimag-kdd-overview-1996-Fayyad.pdf)
