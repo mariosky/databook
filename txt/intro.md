@@ -262,7 +262,7 @@ De este pequeño ejercicio podríamos reportar que las flores Setosa son fácile
 
 Este ejercicio es básico y además no hicimos todas las consideraciones. Más adelante veremos otros detalles que no hemos considerado y por supuesto ya no haremos la minería de datos manualmente. El ejercicio también ha servido para darnos idea de como trabajaremos con Python y sus bibliotecas para este tipo de tareas. Seguro te diste cuenta que no hemos utilizado ciclos, enviamos funciones como parámetros y trabajamos de forma interactiva para llegar a la solución.
 
-# Atención estudiantes:
+#### Atención estudiantes:
 Si te fijas el proceso de KDD también puede ser utilizado como guía para hacer  proyectos de investigación en el área. El proceso es el mismo pero cambian los algoritmos, aplicaciones y tipos de datos. 
 
 ## Algunas definiciones
