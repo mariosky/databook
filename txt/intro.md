@@ -38,7 +38,7 @@ En el texto utilizaremos el término modelo en lugar de patrones, ya que es más
 
 9. El último paso es hacer algo con el conocimiento adquirido. Se puede utilizar directamente para tomar decisiones, incorporarlo como parte de un sistema o simplemente reportar los resultados a los interesados.
 
-### Ejercicio Práctico: ¿Iris, Setosa o Versicolor?
+## Ejercicio Práctico: ¿Iris, Setosa o Versicolor?
 
 #### Nota:
 Para realizar los ejercicios debes tener previamente instalada la distribución [Anaconda](https://www.continuum.io/downloads) con python 2.7.
@@ -66,15 +66,15 @@ sepal_length,sepal_width,petal_length,petal_width,species
 ```
 Para compartir los conjuntos de datos normalmente se utilizan archivos en formato texto. En este caso el *dataset* se encuentra en formato CSV ( comma-separated values) con el cual es muy fácil representar datos tabulares. Los archivos CSV se pueden abrir e importar sin ningún problema a hojas de calculo y sistemas de bases de datos. Como podemos ver en el ejemplo los registros están separados por saltos de línea, y en la primera se indica el nombre de la columna. En este caso cada registro cuenta con cinco campos. Los primeros cuatro son las lecturas correspondientes en centímetros y el último es muy importante ya que es la etiqueta o clase. En este caso en particular la etiqueta indica el tipo de flor.
 
-## Paso 1: identificar el objetivo
+### Paso 1: identificar el objetivo
 
 El objetivo del proceso de KDD será encontrar algunos patrones que nos permitan clasificar las flores, o algún otro conocimiento nuevo.
 
-## Paso 2: seleccionar y recolectar
+### Paso 2: seleccionar y recolectar
 
 En este caso lo que debemos hacer es simplemente bajarnos el archivo *iris.csv* de alguna parte. Esto lo podemos hacer manualmente o directamente con Python.
 
-### Recolectar archivo iris.data
+#### Recolectar archivo iris.data
 
 Esto lo vamos a hacer de manera interactiva desde el interprete. Para ejecutar el interprete simplemente escribimos python en la línea de comandos.
 
@@ -109,7 +109,7 @@ u'5.1,3.5,1.4,0.2,Iris-setosa\n4.9,3.0,1.4,0.2,Iris-setosa\n4.7,3.2,1.3,0.2,Iris
 ```
 ¡Muy bien!, a lo que sigue.
 
-## Paso 3: Preprocesar los datos.
+### Paso 3: Preprocesar los datos.
 
 Una cadena enorme contiene todos los datos. Esto no nos sirven de mucho. El objetivo de este paso será procesar la cadena para tener como resultado un arreglo multidimensional de NumPy [QuickStart] (https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). Este tipo de arreglos nos permite leer secciones a lo largo y ancho lo cual será muy útil en nuestro análisis. Más adelante veremos otras bibliotecas que simplificarán aun más este proceso como la biblioteca de análisis de datos [Pandas](http://pandas.pydata.org/).
 
@@ -164,13 +164,13 @@ array([[ 5.1,  3.5,  1.4,  0.2],
        [ 4.4,  2.9,  1.4,  0.2],
        [ 4.9,  3.1,  1.5,  0.1]])
 ```
-## Paso 4: Transformar los datos.
+### Paso 4: Transformar los datos.
 En este caso sencillo no será necesario transformar los datos.
 
-## Paso 5:  Seleccionar la tarea de minería de datos
+### Paso 5:  Seleccionar la tarea de minería de datos
 La tarea que vamos a realizar será *Clasificación*.
 
-## Paso 6:  Análisis exploratorio
+### Paso 6:  Análisis exploratorio
 La minería de datos en este primer ejercicio la vamos a realizar manualmente, para esto vamos a explorar los datos visualmente. Para ello utilizaremos la popular biblioteca [matplotlib](https://matplotlib.org/). Primero vamos a seleccionar las dos primeras características: ancho y largo del sépalo para ver si hay algún patrón útil. Importamos matplotlib y hacemos el plot de la primera flor. Los primeros cincuenta datos son de Iris Setosa:   
 
 ```python
@@ -221,7 +221,7 @@ Veremos si corremos con igual suerte al agregar la Versicolor:
 
 Por lo menos al considerar estas dos características vemos que es difícil distinguir entre las flores Virginica y Versicorlor.
 
-## Paso 7:  Minería de Datos
+### Paso 7:  Minería de Datos
 
 Este paso lo vamos a hacer manualmente por lo pronto. ¿Como podríamos especificar el modelo?. Una manera muy sencilla sería la siguiente:
 
@@ -251,12 +251,12 @@ Ya que estamos en esto podemos proponer un nuevo modelo simplemente agregando ot
 
 Podríamos segur buscando, por ejemplo cambiando un poco los antecedentes de las reglas, por ejemplo de sepal_length < 5.9 a sepal_length < 6.0. Nos empezamos a dar cuenta que no es fácil hacer esto manualmente. Mejor hagamos programas que hagan este trabajo de generar modelos automáticamente. Es decir, algoritmos de aprendizaje automático. 
 
-## Paso 8. Interpretar y evaluar* 
+### Paso 8. Interpretar y evaluar* 
 
 Esto lo haremos más adelante, pero vale la pena pensar un poco al respecto. ¿Cual es mejor modelo?, ¿El mejor es suficientemente bueno?, ¿Existe un modelo óptimo?. ¿Que pasará cuando agreguemos nuevas flores al conjunto de datos?. 
 También debemos pensar si pudimos extraer algún conocimiento nuevo. ¿Es útil?.
 
-## Paso 9. Aplicar el conocimiento adquirido
+### Paso 9. Aplicar el conocimiento adquirido
 
 De este pequeño ejercicio podríamos reportar que las flores Setosa son fáciles de identificar.  
 
