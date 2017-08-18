@@ -164,7 +164,7 @@ array([[ 5.1,  3.5,  1.4,  0.2],
        [ 4.4,  2.9,  1.4,  0.2],
        [ 4.9,  3.1,  1.5,  0.1]])
 ```
-### Paso 4: Transformar los datos.
+### Paso 4: Transformar los datos
 En este caso sencillo no será necesario transformar los datos.
 
 ### Paso 5:  Seleccionar la tarea de minería de datos
@@ -227,7 +227,7 @@ Este paso lo vamos a hacer manualmente por lo pronto. ¿Como podríamos especifi
 
 ![Setosa, Virginica, Versicolor](../img/plot4.png)
 
-Utilizando una recta para separar a las flores Setosa del resto. Podríamos además utilizar varias rectas o incluso funciones no lineales. Estas ideas las podremos llevar acabo "manualmente" ya que solo estamos considerando dos características. Esto se puede tornar más difícil al considerar las otras dos medidas pues estaríamos trabajando en dimensión cuatro. 
+Utilizando una recta para separar a las flores Setosa del resto. Podríamos además utilizar varias rectas o incluso funciones no lineales. Estas ideas las podremos llevar acabo "manualmente" ya que solo estamos considerando dos características. Esto se puede tornar más difícil al considerar las otras dos medidas pues estaríamos trabajando en dimensión cuatro.
 
 Otra modelo podría ser expresado en forma de reglas:
 ```
@@ -249,11 +249,11 @@ Gráficamente sería algo como:
 Ya que estamos en esto podemos proponer un nuevo modelo simplemente agregando otra regla:
 ![Setosa, Virginica, Versicolor](../img/plot6.png)
 
-Podríamos segur buscando, por ejemplo cambiando un poco los antecedentes de las reglas, por ejemplo de sepal_length < 5.9 a sepal_length < 6.0. Nos empezamos a dar cuenta que no es fácil hacer esto manualmente. Mejor hagamos programas que hagan este trabajo de generar modelos automáticamente. Es decir, algoritmos de aprendizaje automático. 
+Podríamos segur buscando, por ejemplo cambiando un poco los antecedentes de las reglas, por ejemplo de sepal_length < 5.9 a sepal_length < 6.0. Nos empezamos a dar cuenta que no es fácil hacer esto manualmente. Mejor hagamos programas que hagan este trabajo de generar modelos automáticamente. Es decir, algoritmos de aprendizaje automático.
 
-### Paso 8. Interpretar y evaluar* 
+### Paso 8. Interpretar y evaluar
 
-Esto lo haremos más adelante, pero vale la pena pensar un poco al respecto. ¿Cual es mejor modelo?, ¿El mejor es suficientemente bueno?, ¿Existe un modelo óptimo?. ¿Que pasará cuando agreguemos nuevas flores al conjunto de datos?. 
+Esto lo haremos más adelante, pero vale la pena pensar un poco al respecto. ¿Cual es mejor modelo?, ¿El mejor es suficientemente bueno?, ¿Existe un modelo óptimo?. ¿Que pasará cuando agreguemos nuevas flores al conjunto de datos?.
 También debemos pensar si pudimos extraer algún conocimiento nuevo. ¿Es útil?.
 
 ### Paso 9. Aplicar el conocimiento adquirido
@@ -263,16 +263,20 @@ De este pequeño ejercicio podríamos reportar que las flores Setosa son fácile
 Este ejercicio es básico y además no hicimos todas las consideraciones. Más adelante veremos otros detalles que no hemos considerado y por supuesto ya no haremos la minería de datos manualmente. El ejercicio también ha servido para darnos idea de como trabajaremos con Python y sus bibliotecas para este tipo de tareas. Seguro te diste cuenta que no hemos utilizado ciclos, enviamos funciones como parámetros y trabajamos de forma interactiva para llegar a la solución.
 
 #### Atención estudiantes:
-Si te fijas el proceso de KDD también puede ser utilizado como guía para hacer  proyectos de investigación en el área. El proceso es el mismo pero cambian los algoritmos, aplicaciones y tipos de datos. 
+Si te fijas el proceso de KDD también puede ser utilizado como guía para hacer  proyectos de investigación en el área. El proceso es el mismo pero cambian los algoritmos, aplicaciones y tipos de datos.
 
 ## Algunas definiciones
 
 ### Minería de datos
-El libro se centrará principalmente en el componente de Minería de Datos, que como vimos es un paso importante en el proceso de KDD. Pero también te haz dado cuenta que es muy importante hacer bien los pasos anteriores. De hecho en la mayoría de los proyectos los otros pasos requieren de mayor trabajo. La minería de datos entonces podemos definirla como: El proceso de búsqueda de patrones aplicando distintos algoritmos a grandes cantidades de datos. Algunas veces se utiliza el término Minería de Datos para referirse a todo el proceso de KDD. 
+El libro se centrará principalmente en el componente de Minería de Datos, que como vimos es un paso importante en el proceso de KDD. Pero también te haz dado cuenta que es muy importante hacer bien los pasos anteriores. De hecho en la mayoría de los proyectos los otros pasos requieren de mayor trabajo. La minería de datos entonces podemos definirla como: El proceso de búsqueda de patrones aplicando distintos algoritmos a grandes cantidades de datos. Algunas veces se utiliza el término Minería de Datos para referirse a todo el proceso de KDD.
 
-### Aprendizaje automático
+### Aprendizaje automático (Machine learning)
+El aprendizaje automático es el área de las ciencias computacionales encargada de estudiar y desarrollar los algoritmos capaces de aprender y hacer predicciones a partir de los datos. Podríamos decir que en el proceso de vamos a aplicar algoritmos de aprendizaje automático, por lo que debemos conocer muy bien sus fundamentos y limitaciones.
 
 ### Ciencia de datos
+Como hemos visto el proceso de KDD busca extraer conocimiento partir de los datos. ¿Y si vamos más allá?. La ciencia de datos es similar al KDD pero el conocimiento que se busca es el conocimiento científico. Es hacer ciencia a partir de los datos. La ciencia apoyada en datos (data-driven science) al igual que el KDD es una campo interdisciplinario que incluye métodos científicos, procesos, y sistemas para extraer conocimiento o entendimiento a partir de los datos.
+
+#Computación inteligente
 
 ## Aplicaciones
 
