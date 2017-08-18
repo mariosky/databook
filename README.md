@@ -11,21 +11,20 @@ El libro va dirigido principalmente a estudiantes de ingeniería, posgrado y des
 ### Minería de Datos
 
 1. [Introducción](txt/intro.md)
-2. [Los Datos]()
-3. [Análisis de Datos]()
-4. [Clasificación]()
-5. [Evaluación de Modelos]()
-5. [Métodos Ensemble]()
-6. [Agrupación]()
-7. [Sistemas de Recomendación]()
+2. Los Datos
+3. Análisis de Datos
+4. Clasificación
+5. Evaluación de Modelos
+5. Métodos Ensemble
+6. Agrupación
+7. Sistemas de Recomendación
 
 ### Python para análisis de datos
-1. [Python para programadores]()
-2. [SciPy]()
-3. [Pandas]()
-4. [SciKit]()
-5. [TensorFlow]()
-
+1. Python para programadores
+2. SciPy
+3. Pandas
+4. SciKit
+5. TensorFlow
 
 ## Licencia
 El contenido del libro tiene una licencia
