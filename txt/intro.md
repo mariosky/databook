@@ -38,7 +38,7 @@ En el texto utilizaremos el término modelo en lugar de patrones, ya que es más
 
 9. El último paso es hacer algo con el conocimiento adquirido. Se puede utilizar directamente para tomar decisiones, incorporarlo como parte de un sistema o simplemente reportar los resultados a los interesados.
 
-## Ejercicio Práctico: ¿Iris, Setosa o Versicolor?
+## Ejercicio Práctico: Iris, ¿Setosa, Virginica o Versicolor?
 
 #### Nota:
 Para realizar los ejercicios debes tener previamente instalada la distribución [Anaconda](https://www.continuum.io/downloads) con python 2.7.
