@@ -265,28 +265,40 @@ Este ejercicio es básico y además no hicimos todas las consideraciones. Más a
 #### Atención estudiantes:
 Si te fijas el proceso de KDD también puede ser utilizado como guía para hacer  proyectos de investigación en el área. El proceso es el mismo pero cambian los algoritmos, aplicaciones y tipos de datos.
 
-## Algunas definiciones
+## Algunas definiciones y Tecnologías Complementarias
 
 ### Minería de datos
-El libro se centrará principalmente en el componente de Minería de Datos, que como vimos es un paso importante en el proceso de KDD. Pero también te haz dado cuenta que es muy importante hacer bien los pasos anteriores. De hecho en la mayoría de los proyectos los otros pasos requieren de mayor trabajo. La minería de datos entonces podemos definirla como: El proceso de búsqueda de patrones aplicando distintos algoritmos a grandes cantidades de datos. Algunas veces se utiliza el término Minería de Datos para referirse a todo el proceso de KDD.
+El libro se enfocará principalmente en el componente de Minería de Datos, que como vimos es un paso importante en el proceso de KDD. Pero también te haz dado cuenta que es muy importante hacer bien los pasos anteriores. De hecho en la mayoría de los proyectos los otros pasos requieren de mayor trabajo. La minería de datos entonces podemos definirla como: El proceso de búsqueda de patrones aplicando distintos algoritmos a grandes cantidades de datos. Algunas veces se utiliza el término Minería de Datos para referirse a todo el proceso de KDD.
 
-### Aprendizaje automático (Machine learning)
+### Aprendizaje automático (Machine Learning)
 El aprendizaje automático es el área de las ciencias computacionales encargada de estudiar y desarrollar los algoritmos capaces de aprender y hacer predicciones a partir de los datos. Podríamos decir que en el proceso de vamos a aplicar algoritmos de aprendizaje automático, por lo que debemos conocer muy bien sus fundamentos y limitaciones.
 
 ### Ciencia de datos
-Como hemos visto el proceso de KDD busca extraer conocimiento partir de los datos. ¿Y si vamos más allá?. La ciencia de datos es similar al KDD pero el conocimiento que se busca es el conocimiento científico. Es hacer ciencia a partir de los datos. La ciencia apoyada en datos (data-driven science) al igual que el KDD es una campo interdisciplinario que incluye métodos científicos, procesos, y sistemas para extraer conocimiento o entendimiento a partir de los datos.
+Como hemos visto el proceso de KDD busca extraer conocimiento partir de los datos. ¿Y si vamos más allá?. La ciencia de datos es similar al KDD pero el conocimiento que se busca es el conocimiento científico. Es hacer ciencia a partir de los datos. La ciencia apoyada en datos (en inglés data-driven science) al igual que el KDD es una campo interdisciplinario que incluye métodos científicos, procesos, y sistemas para extraer conocimiento o entendimiento a partir de los datos.
 
-#Computación inteligente
+### Computación inteligente
+
+### Big Data
 
 ## Aplicaciones
+
+### Internet de las Cosas
+### Negocios
+### Ciencia
 
 ## Técnicas de la minería de datos
 ### Clasificación
 ### Agrupamiento
+### Regresión
+### Optimización
+
 ### Reglas de asociación
 ### Detección de anomalías
 
+
 ## Los Retos
+### Escalabilidad
+### Tipos de Datos
 
 
 
