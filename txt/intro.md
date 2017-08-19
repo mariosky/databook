@@ -277,10 +277,16 @@ El aprendizaje automático es el área de las ciencias computacionales encargada
 Como hemos visto el proceso de KDD busca extraer conocimiento partir de los datos. ¿Y si vamos más allá?. La ciencia de datos es similar al KDD pero el conocimiento que se busca es el conocimiento científico. Es hacer ciencia a partir de los datos. La ciencia apoyada en datos (en inglés data-driven science) al igual que el KDD es una campo interdisciplinario que incluye métodos científicos, procesos, y sistemas para extraer conocimiento o entendimiento a partir de los datos.
 
 ### Computación inteligente
+La expresión computación inteligente (CI de computational intelligence) se asocia a la habilidad de un sistema de computo de aprender a realizar una tarea a partir de datos o la observación. Una distinción importante es que los métodos empleados se son inspirados en la naturaleza. La CI busca resolver problemas complejos del mundo-real para los cuales el modelado tradicional o matemático son insuficientes. Los métodos más representativos son: redes neuronales artificiales, lógica difusa y computación evolutiva. 
 
 ### Big Data
+Big Data se refiere al caso de sistemas que cuentan con cantidades enormes de datos. Normalmente los datos se almacenan en un servidor central. En el caso de Big Data los datos son tantos que deben almacenarse en muchos servidores. También el tipo de dato podría ser muy grande, por ejemplo un registro de un experimento determinado podría medir un TeraByte. En estos casos las técnicas o algoritmos tradicionales resultan inadecuados. El usar Big Data no implica Minería de Datos, muchos sistemas solamente requieren procesar los datos, por ejemplo para realizar una consulta o algún calculo. Claro que también hay procesos de Minería de Datos que se realizan utilizando Big Data, esto requiere de tecnología y algoritmos especializados.
+
 
 ## Aplicaciones
+
+### Modelado de sistemas no lineales
+En general se utiliza la Minería de Datos en sistemas no lineales. 
 
 ### Internet de las Cosas
 ### Negocios
