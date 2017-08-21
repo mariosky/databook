@@ -37,6 +37,7 @@ búsqueda de respuestas se involucran muchas otras áreas de
 investigación. 
 
 ### Descubrimiento de conocimiento en bases de datos (KDD)
+
 Al proceso de extraer conocimiento útil a partir de datos se le
 denomina *Descubrimiento de Conocimiento en Bases de Datos* o *KDD* ya
 que es muy común utilizar las siglas del inglés de "Knowledge
@@ -48,13 +49,31 @@ ejemplo, en la película "The Big Short" podemos ver al inversionista Michael Bu
 La Minería de Datos de hecho es uno de los componentes del proceso KDD.
 Veamos el proceso del KDD, según el esquema de Brachman y Anand:
 
-![El procesos del KDD según Brachman y Anand](../img/Proceso-KDD.png)
+![El proceso del KDD según Brachman y Anand](../img/Proceso-KDD.png)
 
-1. Como primer paso debemos *identificar el objetivo* del proceso de KDD. Por ejemplo, un proveedor de telefonía móvil podría estar interesado en identificar a aquellos clientes que ya no renovarán su contrato y se irán con la competencia. A esto se le llama la tasa de cancelación de clientes (en inglés [churn rate](https://en.wikipedia.org/wiki/Churn_rate) o attrition rate) y es crucial para estimar el desempeño de la empresa.
+1. Como primer paso debemos *identificar el objetivo* del proceso de
+   KDD. Por ejemplo, un proveedor de telefonía móvil podría estar
+   interesado en identificar a aquellos clientes que ya no renovarán
+   su contrato y se irán con la competencia. A esto se le llama la
+   tasa de cancelación de clientes (en
+   inglés [churn rate](https://en.wikipedia.org/wiki/Churn_rate) o
+   attrition rate) y es crucial para estimar el desempeño de la
+   empresa. 
 
-2. El siguiente paso es *seleccionar y recolectar* aquellos datos necesarios para el proceso. Para nuestro ejemplo, podríamos requerir el historial de pago de los clientes, datos sobre quejas y llamadas que han hecho a soporte, servicios adicionales que se han contratado o cancelado, etc. Esta información puede estar distribuida en diferentes bases de datos. También se puede incluir información que se colecte por medio de sensores o sistemas externos, por ejemplo lecturas del GPS, caídas de la conexión o el número de aplicaciones que el cliente se ha instalado.
+2. El siguiente paso es *seleccionar y recolectar* aquellos datos
+   necesarios para el proceso. Para nuestro ejemplo, podríamos
+   requerir el historial de pago de los clientes, datos sobre quejas y
+   llamadas que han hecho a soporte, servicios adicionales que se han
+   contratado o cancelado, etc. Esta información puede estar
+   distribuida en diferentes bases de datos. También se puede incluir
+   información que se colecte por medio de sensores o sistemas
+   externos, por ejemplo lecturas del GPS, caídas de la conexión o el
+   número de aplicaciones que el cliente se ha instalado. 
 
-3. Es necesario *preprocesar* los datos para limpiarlos de datos erróneos, datos faltantes, cambios de formato, inconsistencias, etc. Esto proceso complicado y depende bastante de los requerimientos de la empresa.
+3. Es necesario *preprocesar* los datos para limpiarlos de datos
+   erróneos, datos faltantes, cambios de formato, inconsistencias,
+   etc. Esto proceso complicado y depende bastante de los
+   requerimientos de la empresa. 
 
 4. Dependiendo de los objetivos se deben *transformar* los datos para simplificar su procesamiento. Por ejemplo un documento de texto es necesario transformarlo en vector representativo. Una imagen puede ser transformada en una representación simplificada pero conservando sus características esenciales. Muchas veces también es necesario eliminar campos que no aportan mucho a la tarea de KDD. Siguiendo nuestro ejemplo, después de un análisis podríamos darnos cuenta que el número de teléfono en sí no es un dato importante para distinguir el comportamiento de los clientes, y que al contrario la marca y modelo de sus móviles son muy importantes.
 
@@ -64,7 +83,11 @@ Veamos el proceso del KDD, según el esquema de Brachman y Anand:
 
 7. En este paso se realiza la *minería de datos* a partir de el o los algoritmos seleccionados en el paso anterior.
 
-Este paso nos arroja los *patrones ocultos* que describen a los datos. Siguiendo nuestro ejemplo, el resultado podría ser un conjunto de reglas nos que pueden servir para decidir si un cliente cancelará su subscripción. Una de las regla podría ser:
+Este paso nos arroja los *patrones ocultos* que describen a los
+datos. Siguiendo nuestro ejemplo, el resultado podría ser un conjunto
+de reglas nos que pueden servir para decidir si un cliente cancelará
+su subscripción. Una de las regla podría ser:
+
 ```
     SI el cliente tiene un promedio mayor a 7 días de retraso
       AND su promedio de llamadas al mes es menor que 10
