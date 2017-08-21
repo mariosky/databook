@@ -1,5 +1,40 @@
 ## Introducción
-Cuando visitamos al médico, confiamos que el ha adquirido un amplio **conocimiento** por medio de interactuar con su entorno y su capacidad de procesar la información que lo rodea. Utilizando este conocimiento él es capaz de darnos un diagnóstico acertado. Si en lugar de asistir con un humano eligiéramos visitar a un robot-médico, más vale que cuente con una buena inteligencia artificial. Según Rusell y Norvig el término inteligencia artificial se aplica cuando una máquina imita las funciones cognitivas que los humanos asocian con otras mentes humanas, como por ejemplo: *aprender* y *resolver problemas* [ref]. Precisamente, una de las primeras aplicaciones de la inteligencia artificial han sido los Sistemas Expertos, los cuales pueden emular la toma de decisiones de un humano experto, por ejemplo a un médico. Un exponente importante de este tipo de sistemas fue  [Mycin](https://es.wikipedia.org/wiki/Mycin) el cual se basaba principalmente en un sencillo motor de inferencia, que manejaba una base de conocimiento de aproximadamente unas 500 reglas. Estas reglas [representaban el conocimiento](https://es.wikipedia.org/wiki/Representaci%C3%B3n_del_conocimiento) de los médicos. Una desventaja de este tipo de sistemas era que se requería de mucho esfuerzo y recursos para extraer el conocimiento de los expertos. Se debía entrevistarlos utilizando técnicas de *elicitación del conocimiento* para después representar dicho conocimiento de alguna manera para después   almacenarlo en una *base de conocimiento*. Digamos que se realizaba una extracción manual del conocimiento a partir de las ideas de los expertos. Cualquier desarrollador que ha tenido que extraer los requerimientos de un usuario te dirá que fue una tarea cercana a lo imposible. No es descabellado preguntarnos entonces: ¿el conocimiento "humano" podrá ser extraído  de otras fuentes?, ¿y si contamos con una base de datos de miles de diagnósticos realizados anteriormente?, ¿podremos extraer de esta base de datos un nuevo conocimiento?. Este es el tipo de preguntas son las que se trata de contestar el área de investigación en inteligencia artificial, pero como veremos más adelante, en la búsqueda de respuestas se involucran muchas otras áreas de investigación.
+
+Cuando visitamos al médico, confiamos en que el haya adquirido un
+amplio **conocimiento** a base de interactuar con su entorno y su
+capacidad de procesar la información que lo rodea. Utilizando este
+conocimiento él podrá ser capaz de darnos un diagnóstico acertado. Si en
+lugar de asistir con un humano eligiéramos visitar a un robot-médico,
+más vale que cuente con una buena inteligencia artificial. Según
+Rusell y Norvig el término inteligencia artificial se aplica cuando
+una máquina imita las funciones cognitivas que los humanos asocian con
+otras mentes humanas, como por ejemplo: *aprender* y *resolver
+problemas* [ref]. Precisamente, una de las primeras aplicaciones de la
+inteligencia artificial han sido los Sistemas Expertos, los cuales
+pueden emular la toma de decisiones de un humano experto, tal como
+un médico. Un exponente importante de este tipo de sistemas
+fue  [Mycin](https://es.wikipedia.org/wiki/Mycin) el cual se basaba
+principalmente en un sencillo motor de inferencia, que manejaba una
+base de conocimiento de aproximadamente unas 500 reglas. Estas
+reglas
+[representaban el conocimiento](https://es.wikipedia.org/wiki/Representaci%C3%B3n_del_conocimiento) de
+los médicos. Una desventaja de este tipo de sistemas era que se
+requería de mucho esfuerzo y recursos para extraer el conocimiento de
+los expertos. Se debía entrevistarlos utilizando técnicas de
+*elicitación del conocimiento* para después representar dicho
+conocimiento de alguna manera para después   almacenarlo en una *base
+de conocimiento*. Digamos que se realizaba una extracción manual del
+conocimiento a partir de las ideas de los expertos. Cualquier
+desarrollador que ha tenido que extraer los requerimientos de un
+usuario te dirá que fue una tarea cercana a lo imposible. No es
+descabellado preguntarnos entonces: ¿el conocimiento "humano" podrá
+ser extraído  de otras fuentes?, ¿y si contamos con una base de datos
+de miles de diagnósticos realizados anteriormente?, ¿podremos extraer
+de esta base de datos un nuevo conocimiento?. Este es el tipo de
+preguntas son las que se trata de contestar el área de investigación
+en inteligencia artificial, pero como veremos más adelante, en la
+búsqueda de respuestas se involucran muchas otras áreas de
+investigación. 
 
 ### Descubrimiento de conocimiento en bases de datos (KDD)
 Al proceso de extraer conocimiento útil a partir de datos se le
