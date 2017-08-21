@@ -9,13 +9,15 @@ posgrado y desarrolladores. Se asume que ya sabes programar en algún
 lenguaje, y tienes nociones de las matemáticas que vimos en la
 preparatoria. En algunos casos se verán temas opcionales en los que si
 requerimos los conocimientos de álgebra lineal, cálculo o estadística
-pero no pasa nada si te los saltas para verlos después. 
+pero no pasa nada si te los saltas para verlos después.
 
 ## Contenido
 
 ### Minería de Datos
 
-1. [Introducción](txt/intro.md)
+1. Introducción
+    1. [Introducción](txt/00.introduccion.md)
+    2. [Ejemplo Práctico de KDD](txt/01.ejercicio_python.md)  
 2. Los Datos
 3. Análisis de Datos
 4. Clasificación
