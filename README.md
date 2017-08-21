@@ -4,7 +4,12 @@ Actualmente vivimos una nueva [fiebre del oro](https://es.wikipedia.org/wiki/Fie
 
 ## A quién va dirigido
 
-El libro va dirigido principalmente a estudiantes de ingeniería, posgrado y desarrolladores. Se asume que ya sabes programar en algún lenguaje, y tienes nociones de las matemáticas que vimos en la preparatoria. En algunos casos se verán temas opcionales en los que si requerimos los conocimientos de álgebra lineal, cálculo o estadística pero no pasa nada si te los saltas para verlos después.
+El libro va dirigido principalmente a estudiantes de ingeniería,
+posgrado y desarrolladores. Se asume que ya sabes programar en algún
+lenguaje, y tienes nociones de las matemáticas que vimos en la
+preparatoria. En algunos casos se verán temas opcionales en los que si
+requerimos los conocimientos de álgebra lineal, cálculo o estadística
+pero no pasa nada si te los saltas para verlos después. 
 
 ## Contenido
 
@@ -15,7 +20,7 @@ El libro va dirigido principalmente a estudiantes de ingeniería, posgrado y des
 3. Análisis de Datos
 4. Clasificación
 5. Evaluación de Modelos
-5. Métodos Ensemble
+5. Métodos *ensemble* o de conjuntos.
 6. Agrupación
 7. Sistemas de Recomendación
 
