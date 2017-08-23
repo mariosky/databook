@@ -21,7 +21,7 @@ pero no pasa nada si te los saltas para verlos después.
 1. Introducción
     1. [Introducción](txt/00.introduccion.md)
     2. [Ejemplo Práctico de KDD](txt/01.ejercicio_python.md)  
-2. [Los Datos](txt/los_datos.md)
+2. [Los Datos](txt/02.los_datos.md)
 3. Análisis de Datos
 4. Clasificación
 5. Evaluación de Modelos
