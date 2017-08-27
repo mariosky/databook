@@ -16,6 +16,7 @@ Fisher
 GPS
 Google
 Intervalar
+Inverse
 IoT
 Irvine
 KD
@@ -51,6 +52,8 @@ Steinbach
 Stevens
 Super
 Tan
+Term
+Tf
 The
 UCI
 URL
@@ -86,6 +89,7 @@ disponibles
 div
 doc
 docs
+document
 dots
 driven
 edu
@@ -96,6 +100,7 @@ exponencialmente
 faltantes
 faltantes
 float
+frequency
 from
 georreferenciación
 get
@@ -104,6 +109,7 @@ grafos
 html
 https
 ics
+idf
 intelligence
 interdisciplinario
 joe
@@ -134,7 +140,7 @@ pixeles
 plot
 plt
 preprocesar
-preprocesar
+preprocesamiento
 profesionistas
 python
 quickstart
