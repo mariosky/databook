@@ -223,3 +223,13 @@ ETL
 Extract
 Transform
 DataFrame
+MPG
+mpg
+cylinders
+displacement
+horsepower
+weight
+US
+acceleration
+origin
+
