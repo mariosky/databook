@@ -28,7 +28,8 @@ pero no pasa nada si te los saltas para verlos después.
     4. [NetworkX](txt/05.networkx.md)
 3. Preprocesamiento
     1. [Calidad de los Datos](txt/06.calidad.md)
-    2. [Ejercicio de limpieza](txt/061.limpieza.md)
+    2. [Preprocesamiento](txt/07.preprocesamiento.md)
+    3. [Ejercicio]()
 4. Análisis de Datos
 5. Clasificación
 6. Evaluación de Modelos
