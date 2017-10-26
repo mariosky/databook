@@ -26,13 +26,15 @@ pero no pasa nada si te los saltas para verlos después.
     2. [Pandas](txt/03.pandas.md)
     3. [NumPy](txt/04.numpy.md)
     4. [NetworkX](txt/05.networkx.md)
-    5. Preprocesamiento
-3. Análisis de Datos
-4. Clasificación
-5. Evaluación de Modelos
-5. Métodos *ensemble* o de conjuntos.
-6. Agrupación
-7. Sistemas de Recomendación
+3. Preprocesamiento
+    1. [Calidad de los Datos](txt/06.calidad.md)
+    2. [Ejercicio de limpieza](txt/061.limpieza.md)
+4. Análisis de Datos
+5. Clasificación
+6. Evaluación de Modelos
+7. Métodos *ensemble* o de conjuntos.
+8. Agrupación
+9. Sistemas de Recomendación
 
 ### Python para análisis de datos
 1. Python para programadores
