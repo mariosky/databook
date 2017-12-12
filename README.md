@@ -30,7 +30,7 @@ pero no pasa nada si te los saltas para verlos después.
     1. [Calidad de los Datos](txt/06.calidad.md)
     2. [Preprocesamiento](txt/07.preprocesamiento.md)
     3. [Ejercicio]()
-4. Análisis de Datos
+4. Visualización
 5. Clasificación
 6. Evaluación de Modelos
 7. Métodos *ensemble* o de conjuntos.
