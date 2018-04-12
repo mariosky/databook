@@ -1,23 +1,7 @@
-
-from os import listdir
-from os.path import isfile, join
-import subprocess
+Ejemplos de comandos para generar los libros:
 
 
-path = r"/Users/mariosky/databook/txt"
+/usr/local/bin/pandoc -o databook.pdf  /Users/mariosky/databook/txt/00.introduccion.md /Users/mariosky/databook/txt/04.numpy.md /Users/mariosky/databook/txt/07.preprocesamiento.md /Users/mariosky/databook/txt/01.ejercicio_python.md /Users/mariosky/databook/txt/06.calidad.md /Users/mariosky/databook/txt/08.visualizacion.md /Users/mariosky/databook/txt/05.networkx.md /Users/mariosky/databook/txt/02.los_datos.md /Users/mariosky/databook/txt/03.pandas.md --latex-engine=/Library/TeX/texbin/xelatex --bibliography /Users/mariosky/databook/txt/databook.bib
 
-files = ["%s/%s" % (path,f) for f in listdir(path) if isfile(join(path, f)) and f[-2:] == 'md']
 
-file_list = " ".join(files)
-
-print file_list
-
-for f in files:
-    args = ['/usr/local/bin/pandoc', "%s/%s" % (path,f), r'--latex-engine=/Library/TeX/texbin/xelatex', '-o', f +".pdf"]
-    print args
-    #subprocess.check_call(args)
-
-    #call(command)
-args = ['/usr/local/bin/pandoc', file_list, r'--latex-engine=/Library/TeX/texbin/xelatex', '-o', "databook.pdf"]
-print args 
-#subprocess.check_call(args)
+/usr/local/bin/pandoc -o databook.epub  /Users/mariosky/databook/txt/00.introduccion.md /Users/mariosky/databook/txt/04.numpy.md /Users/mariosky/databook/txt/07.preprocesamiento.md /Users/mariosky/databook/txt/01.ejercicio_python.md /Users/mariosky/databook/txt/06.calidad.md /Users/mariosky/databook/txt/08.visualizacion.md /Users/mariosky/databook/txt/05.networkx.md /Users/mariosky/databook/txt/02.los_datos.md /Users/mariosky/databook/txt/03.pandas.md --webtex --bibliography /Users/mariosky/databook/txt/databook.bib
