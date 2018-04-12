@@ -1,0 +1,23 @@
+
+from os import listdir
+from os.path import isfile, join
+import subprocess
+
+
+path = r"/Users/mariosky/databook/txt"
+
+files = ["%s/%s" % (path,f) for f in listdir(path) if isfile(join(path, f)) and f[-2:] == 'md']
+
+file_list = " ".join(files)
+
+print file_list
+
+for f in files:
+    args = ['/usr/local/bin/pandoc', "%s/%s" % (path,f), r'--latex-engine=/Library/TeX/texbin/xelatex', '-o', f +".pdf"]
+    print args
+    #subprocess.check_call(args)
+
+    #call(command)
+args = ['/usr/local/bin/pandoc', file_list, r'--latex-engine=/Library/TeX/texbin/xelatex', '-o', "databook.pdf"]
+print args 
+#subprocess.check_call(args)
