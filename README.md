@@ -43,7 +43,7 @@ pero no pasa nada si te los saltas para verlos después.
 4. SciKit
 5. TensorFlow
 
-### Para generar el libro en formato ePub 
+### Para generar el libro en formato ePUB 
 #### Pre requisitos
 1. Git [Guía de Instalación](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git)
 2. Pandoc [Guía de Instalación](https://pandoc.org/installing.html)
