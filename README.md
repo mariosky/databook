@@ -2,7 +2,6 @@
 [![Build Status](https://api.travis-ci.org/mariosky/databook.svg?branch=master)](https://travis-ci.org/mariosky/databook)
 
 
-
 Actualmente vivimos una nueva [fiebre del oro](https://es.wikipedia.org/wiki/Fiebre_del_oro). Todos corremos apresurados en busca de la fortuna que nos espera en nuestros servidores (o en la nube), emocionados por los términos que acaparan los titulares: *Data Science*, *Big Data*, *Artificial Intelligence*. A diario nos llegan noticias de  *startups* o grandes empresas que han encontrado *oro* aplicando esa nueva técnica para explotar sus datos. El reciente *boom* ha despertado el interés de profesionistas y estudiantes por conocer y aplicar estas técnicas. Sin embargo, al empezar a leer sobre el tema muchos se desaniman al darse cuenta que para entenderlo a fondo deben estudiar temas de estadística, álgebra lineal, cálculo y por supuesto programación. Este libro pretende darte un panorama general del tema de minería de datos, con un énfasis en los conceptos más que en las matemáticas (pero de que se ven, se ven). Seguiremos un enfoque práctico con ejemplos y ejercicios de programación utilizando el lenguaje [python](https://www.python.org/). El objetivo es que al final cuentes con el conocimiento y herramientas necesarias para poder aplicar las técnicas de minería de datos y aprendizaje automático a la solución de problemas reales.
 
 ## A quién va dirigido
@@ -43,6 +42,32 @@ pero no pasa nada si te los saltas para verlos después.
 3. Pandas
 4. SciKit
 5. TensorFlow
+
+### Para generar el libro en formato ePub 
+#### Pre requisitos
+1. Git [Guía de Instalación](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git)
+2. Pandoc [Guía de Instalación](https://pandoc.org/installing.html)
+
+#### Generación
+```
+git clone https://github.com/mariosky/databook.git
+```
+```
+cd databook/txt 
+```
+```
+pandoc -o databook.epub title.txt \
+00.introduccion.md \
+01.ejercicio_python.md \
+02.los_datos.md \
+03.pandas.md \
+04.numpy.md \
+05.networkx.md \
+06.calidad.md \
+07.preprocesamiento.md \
+08.visualizacion.md \
+99.bibliografia.md --webtex --bibliography databook.bib --toc
+```
 
 ## Licencia
 El contenido del libro tiene una licencia

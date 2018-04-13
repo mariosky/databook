@@ -1,5 +1,13 @@
-Ejemplos de comandos para generar los libros:
+Ejemplos de comandos para generar el libro:
 
-
-
-/usr/local/bin/pandoc -o databook.epub title.txt /Users/mariosky/databook/txt/00.introduccion.md /Users/mariosky/databook/txt/01.ejercicio_python.md /Users/mariosky/databook/txt/02.los_datos.md /Users/mariosky/databook/txt/03.pandas.md                                     /Users/mariosky/databook/txt/04.numpy.md /Users/mariosky/databook/txt/05.networkx.md /Users/mariosky/databook/txt/06.calidad.md /Users/mariosky/databook/txt/07.preprocesamiento.md /Users/mariosky/databook/txt/08.visualizacion.md /Users/mariosky/databook/txt/99.bibliografia.md --webtex                                                                  --bibliography /Users/mariosky/databook/txt/databook.bib
+pandoc -o databook.epub title.txt \
+00.introduccion.md \
+01.ejercicio_python.md \
+02.los_datos.md \
+03.pandas.md \
+04.numpy.md \
+05.networkx.md \
+06.calidad.md \
+07.preprocesamiento.md \
+08.visualizacion.md \
+99.bibliografia.md --webtex --bibliography databook.bib
