@@ -20,8 +20,8 @@ gross = np.array( data_array[:, 2 ] ,dtype='int')
 
 
 fig, ax = plt.subplots(1, 1)
-ax.set_xscale('log')
-ax.set_yscale('log')
+#ax.set_xscale('log')
+#ax.set_yscale('log')
 ax.set_xlim(900, 500000000)
 
 
@@ -30,13 +30,13 @@ def format_fn(tick_val, tick_pos):
     return '$' + format.format_data(tick_val)
 
 
-ax.set_title(u'Presupuesto de producción vs Recaudación en taquilla (Sin ajuste a la inflación)')
+ax.set_title(u'Presupuesto de producción vs recaudación en taquilla (sin ajuste a la inflación)')
 
-#ax.set_xlabel(u'Presupuesto')
-#ax.set_ylabel(u'Recaudación')
+ax.set_xlabel(u'Presupuesto')
+ax.set_ylabel(u'Recaudación')
 
-ax.set_xlabel(u'Presupuesto en escala logarítmica')
-ax.set_ylabel(u'Recaudación en escala logarítmica')
+#ax.set_xlabel(u'Presupuesto en escala logarítmica')
+#ax.set_ylabel(u'Recaudación en escala logarítmica')
 
 
 
