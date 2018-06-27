@@ -28,5 +28,4 @@ asistencia = ax.barh(  index,  df.Attendance,bar_width,
 ax.set_xlabel(u'Asistencia')
 ax.set_title(u'Asistencia a las Copas del Mundo de la FIFA')
 
-
 plt.show()
