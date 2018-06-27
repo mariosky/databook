@@ -1,7 +1,4 @@
 
-
-
-
 from re import sub
 from decimal import Decimal
 import numpy as np
