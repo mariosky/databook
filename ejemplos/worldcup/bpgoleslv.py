@@ -6,9 +6,6 @@ df = pd.read_csv('fifa-world-cup/WorldCupMatches.csv')
 goles = map(sum,zip(df['Home Team Goals'], df['Away Team Goals']))
 
 
-
-num_bins = 6
-
 fig, ax = plt.subplots()
 
 # the histogram of the data
