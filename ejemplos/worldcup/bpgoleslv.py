@@ -11,7 +11,7 @@ fig, ax = plt.subplots()
 # the histogram of the data
 
 
-ax.boxplot(goles,
+ax.boxplot(list(goles),
         vert=True,  # vertical box alignment
         patch_artist=True,  # fill with color
         labels=['Goles'])  # will be used to label x-ticks

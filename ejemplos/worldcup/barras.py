@@ -15,13 +15,11 @@ opacity = 0.4
 fig, ax = plt.subplots(1, 1)
 
 
-plt.yticks(index, map(lambda d: "{0} {1}".format(d[1], d[0]),  zip(df.Year, df.Country)))
+plt.yticks(index, list( map(lambda d: "{0} {1}".format(d[1], d[0]),  zip(df.Year, df.Country))))
 
 
 asistencia = ax.barh(  index,  df.Attendance,bar_width,
                     alpha=opacity, color='b')
-
-
 
 
 ax.set_xlabel(u'Asistencia')

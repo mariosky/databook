@@ -12,7 +12,7 @@ num_bins = 6
 fig, ax = plt.subplots()
 
 # the histogram of the data
-n, bins, patches = ax.hist(goles, num_bins)
+n, bins, patches = ax.hist(list(goles), num_bins)
 
 # add a 'best fit' line
 ax.set_xlabel('Goles')
