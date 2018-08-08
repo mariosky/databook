@@ -1,14 +1,6 @@
 ---
-title:
-- type: main
-  text: Introducción a la Minería de Datos
-- type: subtitle
-  text: usando Python
-creator:
-- role: author
-  text: J. Mario García Valdez
-- role: editor
-  text: J. J. Merelo Guervós
+title: Introducción a la Minería de Datos
+author: J. Mario García Valdez
 rights: © 2018 J. Mario García Valdez, CC BY-NC
 ibooks:
   version: 1.3.4
