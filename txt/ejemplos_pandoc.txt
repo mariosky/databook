@@ -13,7 +13,7 @@ pandoc -o databook.epub title.txt \
 99.bibliografia.md --webtex --bibliography databook.bib --toc
 
 
-pandoc -o example14.pdf --latex-engine=xelatex  title.txt \
+pandoc -o databook.pdf --latex-engine=xelatex  title.txt \
 00.introduccion.md \
 01.ejercicio_python.md \
 02.los_datos.md \
@@ -24,3 +24,16 @@ pandoc -o example14.pdf --latex-engine=xelatex  title.txt \
 08.visualizacion.md \
 09.classification.md \
 99.bibliografia.md --webtex --bibliography databook.bib --toc 
+
+pandoc -o databook.pdf --latex-engine=xelatex title.txt \
+00.introduccion.md \
+01.ejercicio_python.md \
+02.los_datos.md \
+03.pandas.md \
+04.numpy.md \
+06.calidad.md \
+07.preprocesamiento.md \
+08.visualizacion.md \
+09.classification.md \
+99.bibliografia.md --webtex --bibliography databook.bib \
+--toc  --from markdown --template eisvogel -V lang=es -V titlepage=true --listings
