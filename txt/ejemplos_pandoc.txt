@@ -35,5 +35,5 @@ pandoc -o databook.pdf --latex-engine=xelatex title.txt \
 07.preprocesamiento.md \
 08.visualizacion.md \
 09.classification.md \
-99.bibliografia.md --webtex --bibliography databook.bib \
+99.bibliografia.md --webtex  --filter pandoc-citeproc --bibliography databook.bib \
 --toc  --from markdown --template eisvogel -V lang=es -V titlepage=true --listings
