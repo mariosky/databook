@@ -27,6 +27,13 @@ pandoc -o databook.pdf --latex-engine=xelatex  title.txt \
 10.tecnicasdeclasificacion.md \
 99.bibliografia.md --webtex --bibliography databook.bib --toc 
 
+
+pandoc -o databook.pdf --latex-engine=xelatex title.txt \
+12.clusters.md \
+99.bibliografia.md --webtex  --filter pandoc-citeproc --bibliography databook.bib \
+--toc  --from markdown --template eisvogel -V lang=es -V titlepage=true --listings
+
+
 pandoc -o databook.pdf --latex-engine=xelatex title.txt \
 00.introduccion.md \
 01.ejercicio_python.md \
