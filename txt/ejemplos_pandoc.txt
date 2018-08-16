@@ -29,9 +29,8 @@ pandoc -o databook.pdf --latex-engine=xelatex  title.txt \
 
 
 pandoc -o databook.pdf --latex-engine=xelatex title.txt \
-12.clusters.md \
-99.bibliografia.md --webtex  --filter pandoc-citeproc --bibliography databook.bib \
---toc  --from markdown --template eisvogel -V lang=es -V titlepage=true --listings
+12.clusters.md --webtex  --filter pandoc-citeproc \
+--from markdown --template eisvogel -V lang=es -V titlepage=true --listings
 
 
 pandoc -o databook.pdf --latex-engine=xelatex title.txt \
