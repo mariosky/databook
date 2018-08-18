@@ -29,7 +29,7 @@ pandoc -o databook.pdf --latex-engine=xelatex  title.txt \
 
 
 pandoc -o databook.pdf --latex-engine=xelatex title.txt \
-12.clusters.md --webtex  --filter pandoc-citeproc \
+10.tecnicasdeclasificacion.md --webtex  --filter pandoc-citeproc \
 --from markdown --template eisvogel -V lang=es -V titlepage=true --listings
 
 
