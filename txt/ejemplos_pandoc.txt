@@ -40,7 +40,7 @@ pandoc -o databook.pdf --latex-engine=xelatex title.txt \
 --from markdown --template eisvogel -V lang=es -V titlepage=true --listings
 
 
-pandoc -o databook.pdf --latex-engine=xelatex title.txt \
+pandoc -o databook.pdf --pdf-engine=xelatex title.txt \
 00.00.md \
 00.01.md \
 00.introduccion.md \
