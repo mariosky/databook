@@ -56,16 +56,23 @@ cd databook/txt
 ```
 ```
 pandoc -o databook.epub title.txt \
-00.introduccion.md \
-01.ejercicio_python.md \
-02.los_datos.md \
-03.pandas.md \
-04.numpy.md \
-05.networkx.md \
-06.calidad.md \
-07.preprocesamiento.md \
-08.visualizacion.md \
-99.bibliografia.md --webtex --bibliography databook.bib --toc
+> 00.00.md \
+> 00.01.md \
+> 00.introduccion.md \
+> 01.ejercicio_python.md \
+> 02.los_datos.md \
+> 06.calidad.md \
+> 07.preprocesamiento.md \
+> 03.pandas.md \
+> 04.numpy.md \
+> 08.visualizacion.md \
+> 13.inferenciaFuzzy.md \
+> 09.classification.md \
+> 10.tecnicasdeclasificacion.md \
+> 11.asoc.md \
+> 12.clusters.md \
+> 00.02.md \
+> 99.bibliografia.md --webtex --bibliography databook.bib --toc
 ```
 
 ## Licencia
