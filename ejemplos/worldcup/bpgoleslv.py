@@ -5,18 +5,19 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('fifa-world-cup/WorldCupMatches.csv')
 goles = map(sum,zip(df['Home Team Goals'], df['Away Team Goals']))
 
+goles2 = map(sum,zip(df['Home Team Goals'], df['Away Team Goals']))
 
 fig, ax = plt.subplots()
 
 # the histogram of the data
 
 
-ax.boxplot(list(goles),
+ax.boxplot([ df['Home Team Goals'], df['Away Team Goals']] ,
         vert=True,  # vertical box alignment
         patch_artist=True,  # fill with color
-        labels=['Goles'])  # will be used to label x-ticks
+        labels=['Goles', 'Goles2'])  # will be used to label x-ticks
 
-ax.set_ylim(-1, 15)
+ax.set_ylim(-1, 13)
 
 
 # add a 'best fit' line

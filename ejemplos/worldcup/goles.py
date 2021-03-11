@@ -7,7 +7,7 @@ goles = map(sum,zip(df['Home Team Goals'], df['Away Team Goals']))
 
 
 
-num_bins = 6
+num_bins = 12
 
 fig, ax = plt.subplots()
 
@@ -20,7 +20,7 @@ ax.set_ylabel('Frecuencia')
 ax.set_title(r'Goles por partido en Copas del Mundo hasta 2014')
 
 # Tweak spacing to prevent clipping of ylabel
-fig.tight_layout()
+#fig.tight_layout()
 plt.show()
 
 

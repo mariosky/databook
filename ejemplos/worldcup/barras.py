@@ -14,15 +14,15 @@ opacity = 0.4
 
 fig, ax = plt.subplots(1, 1)
 
-
 plt.yticks(index, list( map(lambda d: "{0} {1}".format(d[1], d[0]),  zip(df.Year, df.Country))))
+plt.yticks(index, ["{0} {1}".format(country, year)   for (year, country) in   zip(df.Year, df.Country)])
 
-
-asistencia = ax.barh(  index,  df.Attendance,bar_width,
+asistencia = ax.barh(index,  df.Attendance, bar_width,
                     alpha=opacity, color='b')
 
 
 ax.set_xlabel(u'Asistencia')
+ax.set_ylabel(u'Mundiales')
 ax.set_title(u'Asistencia a las Copas del Mundo de la FIFA')
 
 plt.show()
