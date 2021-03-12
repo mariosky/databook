@@ -27,6 +27,6 @@ while contents:
     else:
         print(file_content.url)
         if file_content.path[-3:] == ".md":
-            print("selected: "+ file_content)
+            print("selected: "+ file_content.path)
 
 print("finished")
