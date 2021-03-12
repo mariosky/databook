@@ -33,7 +33,7 @@ while contents:
             print("selected: "+ file_content.html_url)
             markdown_files.append(file_content)
         
-print(markdown_files[0].content)
+print(markdown_files[0].decoded_content)
 #
 # read the data from the URL and print it
 #
