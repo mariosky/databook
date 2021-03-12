@@ -31,14 +31,14 @@ while contents:
         print(file_content.path)
         if file_content.path[-3:] == ".md":
             print("selected: "+ file_content.html_url)
-            markdown_files.append(file_content.html_url)
+            markdown_files.append(file_content)
         
-
+print(markdown_files[0].content)
 #
 # read the data from the URL and print it
 #
 # open a connection to a URL using urllib
-webUrl  = urllib.request.urlopen(markdown_files[0])
+webUrl  = urllib.request.urlopen(markdown_files[0].html_url)
 
 #get the result code and print it
 print ("result code: " + str(webUrl.getcode()))
