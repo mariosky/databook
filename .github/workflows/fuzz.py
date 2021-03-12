@@ -8,6 +8,7 @@ Created on Wed Jul 15 13:39:36 2020
 
 from github import Github
 import os
+import urllib.request
 
 file = open("../../credits.md")
 for line in file:
@@ -20,6 +21,8 @@ g = Github( os.getenv("GITHUB_TOKEN"))
 repo = g.get_repo(os.getenv("GITHUB_REPO"))
 
 contents = repo.get_contents("")
+markdown_files = []
+
 while contents:
     file_content = contents.pop(0)
     if file_content.type == "dir":
@@ -28,5 +31,21 @@ while contents:
         print(file_content.path)
         if file_content.path[-3:] == ".md":
             print("selected: "+ file_content.html_url)
+            markdown_files.append(file_content.html_url)
+        
+
+#
+# read the data from the URL and print it
+#
+# open a connection to a URL using urllib
+webUrl  = urllib.request.urlopen(markdown_files[0])
+
+#get the result code and print it
+print ("result code: " + str(webUrl.getcode()))
+
+# read the data from the URL and print it
+data = webUrl.read()
+print (data)
+
 
 print("finished")
