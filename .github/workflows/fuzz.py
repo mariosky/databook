@@ -25,8 +25,8 @@ while contents:
     if file_content.type == "dir":
         contents.extend(repo.get_contents(file_content.path))
     else:
-        print(file_content)
-        if file_content[-3:] == ".md":
+        print(file_content.url)
+        if file_content.path[-3:] == ".md":
             print("selected: "+ file_content)
 
 print("finished")
