@@ -12,10 +12,12 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install setuptools wheel numpy scikit-fuzzy
+        pip install setuptools wheel PyGithub
     - name: Build and publish
       env:
-        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
-        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPO: ${{ github.repository }}
       run: |
+        cd .github/workflows
         python fuzz.py
+
