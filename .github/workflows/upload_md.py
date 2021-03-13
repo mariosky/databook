@@ -8,7 +8,9 @@ Created on Wed Jul 15 13:39:36 2020
 
 from github import Github
 import os
-import urllib.request
+import requests
+import json
+
 
 #file = open("../../credits.md")
 #for line in file:
@@ -36,11 +38,16 @@ while contents:
 print(markdown_files[0].html_url)
 print(g.render_markdown(markdown_files[0].decoded_content.decode("utf-8") ))
 
-#
-# read the data from the URL and print it
-#
-# open a connection to a URL using urllib
-#webUrl  = urllib.request.urlopen(markdown_files[0].html_url)
+payload = {'url': markdown_files[0].html_url,
+           'title': markdown_files[0].name,
+           'body': g.render_markdown(markdown_files[0].decoded_content.decode("utf-8"))
+          }
+
+r = requests.post('https://{}/user'.format(os.getenv("SEARCH_HOST")),
+                  data=json.dumps(payload),
+                  auth=('user', os.getenv("API_USER_PASSWORD")))
+print(r.status_code)
+print(r.content)
 
 #get the result code and print it
 #print ("result code: " + str(webUrl.getcode()))
