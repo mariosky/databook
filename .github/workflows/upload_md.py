@@ -9,7 +9,9 @@ Created on Wed Jul 15 13:39:36 2020
 from github import Github
 import os
 import requests
-import json
+
+from bs4 import BeautifulSoup
+
 
 
 #file = open("../../credits.md")
@@ -36,12 +38,18 @@ while contents:
             #print("selected: "+ file_content.html_url)
             markdown_files.append(file_content)
         
-print(markdown_files[0].html_url)
-print(g.render_markdown(markdown_files[0].decoded_content.decode("utf-8") ))
+print(markdown_files[1].html_url)
+print(g.render_markdown(markdown_files[1].decoded_content.decode("utf-8") ))
 
-payload = {'url': markdown_files[0].html_url,
-           'title': markdown_files[0].name,
-           'body': g.render_markdown(markdown_files[0].decoded_content.decode("utf-8"))
+html_doc = g.render_markdown(markdown_files[1].decoded_content.decode("utf-8"))
+soup = BeautifulSoup(html_doc, 'html.parser')
+
+text = soup.get_text()
+
+
+payload = {'url': markdown_files[1].html_url,
+           'title': markdown_files[1].name,
+           'body': text
           }
 
 r = requests.post('http://{}:5000/add-document'.format(os.getenv("SEARCH_HOST")),
