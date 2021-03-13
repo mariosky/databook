@@ -34,6 +34,8 @@ while contents:
             markdown_files.append(file_content)
         
 print(markdown_files[0].decoded_content)
+print(g.render_markdown(markdown_files[0].decoded_content.decode("utf-8") ))
+
 #
 # read the data from the URL and print it
 #
