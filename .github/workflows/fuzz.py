@@ -10,9 +10,9 @@ from github import Github
 import os
 import urllib.request
 
-file = open("../../credits.md")
-for line in file:
-    print(line)
+#file = open("../../credits.md")
+#for line in file:
+#    print(line)
 
 g = Github( os.getenv("GITHUB_TOKEN"))
 # Github Enterprise with custom hostname
@@ -30,10 +30,10 @@ while contents:
     else:
         print(file_content.path)
         if file_content.path[-3:] == ".md":
-            print("selected: "+ file_content.html_url)
+            #print("selected: "+ file_content.html_url)
             markdown_files.append(file_content)
         
-print(markdown_files[0].decoded_content)
+print(markdown_files[0]..html_url)
 print(g.render_markdown(markdown_files[0].decoded_content.decode("utf-8") ))
 
 #
