@@ -44,7 +44,7 @@ payload = {'url': markdown_files[0].html_url,
            'body': g.render_markdown(markdown_files[0].decoded_content.decode("utf-8"))
           }
 
-r = requests.post('https://{}:5000/add-document'.format(os.getenv("SEARCH_HOST")),
+r = requests.post('http://{}:5000/add-document'.format(os.getenv("SEARCH_HOST")),
                   json=payload,
                   auth=('user', os.getenv("API_USER_PASSWORD")))
 print(r.status_code)
