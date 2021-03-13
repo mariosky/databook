@@ -33,7 +33,7 @@ while contents:
             #print("selected: "+ file_content.html_url)
             markdown_files.append(file_content)
         
-print(markdown_files[0]..html_url)
+print(markdown_files[0].html_url)
 print(g.render_markdown(markdown_files[0].decoded_content.decode("utf-8") ))
 
 #
