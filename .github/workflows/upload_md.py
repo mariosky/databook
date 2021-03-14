@@ -37,7 +37,7 @@ while contents:
             soup = BeautifulSoup(html_doc, 'html.parser')
             text = soup.get_text()
 
-            if i == 7:
+            if i == 9:
                 print(file_content.content)
                 print(html_doc)
                 print(text)
