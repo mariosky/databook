@@ -24,8 +24,9 @@ g = Github( os.getenv("GITHUB_TOKEN"))
 repo = g.get_repo(os.getenv("GITHUB_REPO"))
 
 contents = repo.get_contents("")
-
+i = 0
 while contents:
+    i+=1
     file_content = contents.pop(0)
     if file_content.type == "dir":
         contents.extend(repo.get_contents(file_content.path))
@@ -35,6 +36,9 @@ while contents:
             soup = BeautifulSoup(html_doc, 'html.parser')
             text = soup.get_text()
 
+            if i == 6:
+                print(html_doc)
+                print(text)
 
             payload = {'url': file_content.html_url,
                        'title': file_content.name,
