@@ -26,17 +26,19 @@ repo = g.get_repo(os.getenv("GITHUB_REPO"))
 contents = repo.get_contents("")
 i = 0
 while contents:
-    i+=1
+
     file_content = contents.pop(0)
     if file_content.type == "dir":
         contents.extend(repo.get_contents(file_content.path))
     else:
         if file_content.path[-3:] == ".md":
+            i += 1
             html_doc = g.render_markdown(file_content.decoded_content.decode("utf-8"))
             soup = BeautifulSoup(html_doc, 'html.parser')
             text = soup.get_text()
 
-            if i == 6:
+            if i == 7:
+                print(file_content.content)
                 print(html_doc)
                 print(text)
 
