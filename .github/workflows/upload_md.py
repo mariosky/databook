@@ -51,4 +51,4 @@ while contents:
                 print("Server timout")
             time.sleep(1)
 
-print("finished")
+print("upload finished")
