@@ -41,7 +41,7 @@ while contents:
                       }
             r = None
             try:
-                r = requests.post('http://{}:5000/add-document'.format(os.getenv("SEARCH_HOST")),
+                r = requests.post('http://{}:5000/add-documents'.format(os.getenv("SEARCH_HOST")),
                               json=payload,
                               auth=('user', os.getenv("API_USER_PASSWORD")),
                               timeout=1)
