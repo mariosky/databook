@@ -13,6 +13,7 @@ preparatoria. En algunos casos se verán temas opcionales en los que si
 requerimos los conocimientos de álgebra lineal, cálculo o estadística
 pero no pasa nada si te los saltas para verlos después.
 
+
 ## Contenido
 
 ### Minería de Datos
