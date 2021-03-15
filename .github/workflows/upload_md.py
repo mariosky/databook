@@ -32,12 +32,12 @@ while contents:
     else:
         if file_content.path[-3:] == ".md":
             html_doc = g.render_markdown(file_content.decoded_content.decode("utf-8"))
-            soup = BeautifulSoup(html_doc, 'html.parser')
-            text = soup.get_text()
+            #soup = BeautifulSoup(html_doc, 'html.parser')
+            #text = soup.get_text()
 
             payload = {'url': file_content.html_url,
                        'title': file_content.name,
-                       'body': text
+                       'body': html_doc
                       }
             r = None
             try:
