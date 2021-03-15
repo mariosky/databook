@@ -11,7 +11,6 @@ We need to add SEARCH_HOST and  API_USER_PASSWORD secret variables in our repo.
 These are defined in main.yml.
 """
 
-
 from github import Github
 import os
 import requests
