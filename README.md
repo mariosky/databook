@@ -16,8 +16,6 @@ pero no pasa nada si te los saltas para verlos después.
 
 ## Contenido
 
-### Minería de Datos
-
 1. Introducción
     1. [Introducción](txt/00.introduccion.md)
     2. [Ejemplo Práctico de KDD](txt/01.ejercicio_python.md)  
