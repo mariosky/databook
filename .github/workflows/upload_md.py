@@ -24,7 +24,6 @@ g = Github( os.getenv("GITHUB_TOKEN"))
 repo = g.get_repo(os.getenv("GITHUB_REPO"))
 
 contents = repo.get_contents("")
-i = 0
 while contents:
 
     file_content = contents.pop(0)
@@ -32,15 +31,9 @@ while contents:
         contents.extend(repo.get_contents(file_content.path))
     else:
         if file_content.path[-3:] == ".md":
-            i += 1
             html_doc = g.render_markdown(file_content.decoded_content.decode("utf-8"))
             soup = BeautifulSoup(html_doc, 'html.parser')
             text = soup.get_text()
-
-            if i == 9:
-                print(file_content.content)
-                print(html_doc)
-                print(text)
 
             payload = {'url': file_content.html_url,
                        'title': file_content.name,
