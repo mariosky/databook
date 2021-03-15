@@ -7,6 +7,7 @@ Searches for markdown files in the current repo,
 then it extracts the rendered markdown leaving only the basic html version,
 then it extracts all html tags and sends the body to the redis-search server.
 
+
 We need to add SEARCH_HOST and  API_USER_PASSWORD secret variables in our repo.
 These are defined in main.yml.
 """
