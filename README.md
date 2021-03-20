@@ -1,7 +1,5 @@
 # Introducción a la Minería de Datos
 
-[![Build Status](https://api.travis-ci.org/mariosky/databook.svg?branch=master)](https://travis-ci.org/mariosky/databook)
-
 Actualmente vivimos una nueva [fiebre del oro](https://es.wikipedia.org/wiki/Fiebre_del_oro). Todos corremos apresurados en busca de la fortuna que nos espera en nuestros servidores (o en la nube), emocionados por los términos que acaparan los titulares: *Data Science*, *Big Data*, *Artificial Intelligence*. A diario nos llegan noticias de  *startups* o grandes empresas que han encontrado *oro* aplicando esa nueva técnica para explotar sus datos. El reciente *boom* ha despertado el interés de profesionistas y estudiantes por conocer y aplicar estas técnicas. Sin embargo, al empezar a leer sobre el tema muchos se desaniman al darse cuenta que para entenderlo a fondo deben estudiar temas de estadística, álgebra lineal, cálculo y por supuesto programación. Este libro pretende darte un panorama general del tema de minería de datos, con un énfasis en los conceptos más que en las matemáticas (pero de que se ven, se ven). Seguiremos un enfoque práctico con ejemplos y ejercicios de programación utilizando el lenguaje [python](https://www.python.org/). El objetivo es que al final cuentes con el conocimiento y herramientas necesarias para poder aplicar las técnicas de minería de datos y aprendizaje automático a la solución de problemas reales.
 
 ## A quién va dirigido
