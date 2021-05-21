@@ -44,7 +44,7 @@ pero no pasa nada si te los saltas para verlos después.
 1. Git [Guía de Instalación](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git)
 2. Pandoc [Guía de Instalación](https://pandoc.org/installing.html)
 
-#### Generación
+#### Para generar un pdf
 ```
 git clone https://github.com/mariosky/databook.git
 ```
